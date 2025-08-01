@@ -290,7 +290,7 @@ nav{
     margin-top: -1px;
 .bx-menu{
     display: block;
-    padding: 0 10px;
+    margin: 0 10px;
     z-index: 99999;
 }
 .menu{
