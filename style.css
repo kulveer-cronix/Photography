@@ -337,10 +337,10 @@ left: 0%;
         transform: translate(0px, 150px);
     }
       .v-img .item2{
-        transform: translate(150px, 150px);
+        transform: translate(130px, 150px);
     }
     .v-img .item3{
-        transform: translate( 135px, 140px);
+        transform: translate( 135px, 141px);
     }
 }
 .AboutUs{
