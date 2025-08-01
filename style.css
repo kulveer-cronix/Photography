@@ -285,8 +285,8 @@ transform: translateY(4px);
 }
 @media screen and (max-width:752px) {
     body{
-        object-fit: contain;
-        overflow: hidden;
+        /* object-fit: contain; */
+        /* overflow: hidden; */
     }
 nav{
     margin-top: -1px;
