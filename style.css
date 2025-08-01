@@ -95,6 +95,7 @@ transition: .4s;
     background-repeat: no-repeat;
     height: 70vh;
     width: 100%;
+    padding: 20px;
     cursor: pointer;
     transition: .5s;
 
@@ -283,11 +284,8 @@ transform: translateY(4px);
 }
   
 }
-@media screen and (max-width:752px) {
-    body{
-        /* object-fit: contain; */
-        /* overflow: hidden; */
-    }
+@media screen and (max-width:662px) {
+ 
 nav{
     margin-top: -1px;
 .bx-menu{
