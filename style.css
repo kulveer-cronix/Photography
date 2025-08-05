@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    object-fit: cover;
+    object-fit: contain;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
@@ -42,11 +42,13 @@ p{
     color: gray;
 }
 nav{
-    /* height: 9vh;          */
-    position: fixed;
+      background-color: rgba(0, 0, 0, 0.63);
     width: 100%;
-    z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.63);
+    position: fixed;
+     z-index: 9999;
+    .container{
+     width: 100%;
+    }  
     .menu{
         width: 50%;
         padding: 0 10px;
@@ -71,17 +73,16 @@ transition: .4s;
         color: white;
         font-size: 1.4rem;
         display: none;
-        padding: 0 10px;
+        margin: 0 10px;
     }
 }
 .hero{
     display: flex;
     flex-direction: column;
     height: 100vh;
-   
  .hero-head h1{
     font-size: 4.5rem;
-    margin-block: 14vh 5vh;
+    margin-block: 10vh 5vh;
 
 
  }
@@ -91,7 +92,6 @@ transition: .4s;
  .img-bg{
     background: url(./src/img/wallhaven-4g6eye.jpg);
     filter: blur(2px) brightness(80%);
-/* backdrop-filter: blur(5px); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,6 +129,9 @@ right: 25%;
 
 }
 .works{
+    .container{
+        margin-top: 0;
+    }
     .works-img{
         margin: 0 auto;
         
@@ -170,11 +173,11 @@ transition: .4s;
     transition: .4s;
     text-transform: capitalize;
     border: 2px solid white;
-    /* left: 20%; */
+
     color: white;
     text-align: center;
     font-size: 1.3rem;
-    /* color: transparent; */
+    
     opacity: 0;
 }
 .w-img:hover a{
@@ -185,14 +188,16 @@ transition: .4s;
 }
 .victory
 {
-    height: 90vh;
+    height: auto;
+    margin-bottom: 5vh;
     .container{
         width: 100%;
     }
 
    .vicory-img .v-img{
     height: 60vh;
-    width:50vw;
+    width: 80%;
+
     margin: 0 auto;
         background: url(./src/img/Image\ \(10\).png) no-repeat ;
         background-position: center;
@@ -206,11 +211,11 @@ transition: .4s;
     
     .v-img .item1{
         top: 20%;
-        left: -8%;
+        left: -5%;
     }
     .v-img .item2{
        top: 20%;
-       right: -8%;
+       right: -5%;
     }
     .v-img .item3{
         bottom: -18%;
@@ -219,8 +224,7 @@ transition: .4s;
     }
 
 }
-.AboutUs
-{
+.AboutUs{
     .container{
         margin-top: 10vh;
     }
@@ -238,17 +242,12 @@ color: black;
         font-weight: 900;
     }
     .about-aside p{
-        /* width: 50%; */
+
         margin: 0 auto;
         text-align: center;
         margin-top: 15px;
     }
-    .about-r-aside{
-       width: 80%;
-    }
-    .about-r-aside img{
-        margin: 0 3.2%;
-    }
+ 
 }
 footer{
     margin-top: 10vh;
@@ -282,7 +281,7 @@ color: black;
     color: white;
    }
    ul li:hover{
-/* color: black; */
+
 scale: 1.3;
 transition: .4s all linear ease-in-out;
 cursor: pointer;
@@ -298,13 +297,16 @@ transform: translateY(4px);
 }
   
 }
-@media screen and (max-width:902px) 
- {
+@media screen and (max-width:902px)  {
+    
 nav{
     margin-top: -1px;
+    position: fixed;
+
+
 .bx-menu{
     display: block;
-    /* margin: 0 10px; */
+
     z-index: 99999;
 }
 .menu{
@@ -315,6 +317,7 @@ nav{
     position: absolute;
     flex-direction: column;
     top: 0vh;
+    z-index: 99999;
     right: -900px;
     justify-content:initial;
      transition: .6s;
@@ -331,6 +334,14 @@ nav{
 
 
  }
+ .hero{
+        .hero-head h1{
+    font-size: 4.5rem;
+    margin-block: 10vh 5vh;
+
+
+ }
+    }
 
 }
 @media screen and (max-width:662px) {
@@ -351,7 +362,11 @@ left: 0%;
     .vicory-img .v-img{
         width: 80%;
      
-    }} 
+    }
+    .v-img img{
+        height: 15vh;
+         }
+} 
 .AboutUs{
     .container{
         margin-top: 0;
@@ -364,6 +379,11 @@ left: 0%;
         /* margin-bottom: 0; */}
  .about-r-aside{
         margin: 0 55px;
+    }
+}
+.victory{
+    .vicory-img .v-img{
+        height: 40vh;
     }
 }
 }

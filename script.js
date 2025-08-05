@@ -7,3 +7,7 @@ x.onclick=()=>{
     menu.classList.toggle('active')
     
 }
+window.onscroll=()=>{
+    x.classList.remove('bx-x')
+    menu.classList.remove('active')
+}
