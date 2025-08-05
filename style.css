@@ -48,7 +48,8 @@ nav{
     z-index: 9999;
   background-color: rgba(0, 0, 0, 0.63);
     .menu{
-        width: 40%;
+        width: 50%;
+        padding: 0 10px;
     }
     
     .menul li{
@@ -70,6 +71,7 @@ transition: .4s;
         color: white;
         font-size: 1.4rem;
         display: none;
+        padding: 0 10px;
     }
 }
 .hero{
@@ -183,7 +185,10 @@ transition: .4s;
 }
 .victory
 {
-    height: 80vh;
+    height: 90vh;
+    .container{
+        width: 100%;
+    }
 
    .vicory-img .v-img{
     height: 60vh;
@@ -191,20 +196,26 @@ transition: .4s;
     margin: 0 auto;
         background: url(./src/img/Image\ \(10\).png) no-repeat ;
         background-position: center;
+        position: relative;
         background-size: 100% 100%;
     }
     .v-img img{
         height: 20vh;
+        position: absolute;
     }
     
     .v-img .item1{
-        transform: translate(-40px, 150px);
+        top: 20%;
+        left: -8%;
     }
     .v-img .item2{
-        transform: translate(580px, 25px);
+       top: 20%;
+       right: -8%;
     }
     .v-img .item3{
-        transform: translate( 530px, 200px);
+        bottom: -18%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 }
@@ -227,13 +238,16 @@ color: black;
         font-weight: 900;
     }
     .about-aside p{
-        width: 50%;
+        /* width: 50%; */
         margin: 0 auto;
         text-align: center;
         margin-top: 15px;
     }
     .about-r-aside{
-        margin: 0 auto;
+       width: 80%;
+    }
+    .about-r-aside img{
+        margin: 0 10%;
     }
 }
 footer{
@@ -284,8 +298,8 @@ transform: translateY(4px);
 }
   
 }
-@media screen and (max-width:662px) {
- 
+@media screen and (max-width:902px) 
+ {
 nav{
     margin-top: -1px;
 .bx-menu{
@@ -301,7 +315,7 @@ nav{
     position: absolute;
     flex-direction: column;
     top: 0vh;
-    right: -500px;
+    right: -900px;
     justify-content:initial;
      transition: .6s;
     background-color: rgba(0, 0, 0, 0.63);
@@ -315,7 +329,11 @@ nav{
     padding: 10px 20px;
 }
 
-}   
+
+ }
+
+}
+@media screen and (max-width:662px) {
 .hero{
     .hero-head h1{
         font-size: 2rem;
@@ -331,18 +349,9 @@ left: 0%;
 }
 .victory{
     .vicory-img .v-img{
-        width: 100%;
-    }
-    .v-img .item1{
-        transform: translate(0px, 150px);
-    }
-      .v-img .item2{
-        transform: translate(120px, 150px);
-    }
-    .v-img .item3{
-        transform: translate( 135px, 141px);
-    }
-}
+        width: 80%;
+     
+    }} 
 .AboutUs{
     .container{
         margin-top: 0;
